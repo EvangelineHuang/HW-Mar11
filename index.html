@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Visualization with animation and interaction</title>
+  </head>
+  <style>
+  p{
+    font-size:20px;
+    width:600px;
+  }
+  body{
+    background-color:#f4dada;
 
+  }
+  a{
+    background-color:#fdfdf6
+  }
+  </style>
+  <body>
+    <h1>Visualization with animation and interaction and how to achieve it in d3</h1>
+    <p><a href="https://qz.com/296941/interactive-graphic-every-active-satellite-orbiting-earth/">Click here for the visualization</a></p>
+    <p>This visualization is composed of different sizes of circles, squares and grid lines. If I want to create this
+      visulizaiton using d3 and svg, first I will creat a svg with groups of shapes. Then I will create different
+    div elements and hide them and set their positions to absolute. Then give each circle or square an event listener. When they are
+  hovered over, move the their corresponding div element to the right place and show their labels, when the mouse moves out, hide the div again.
+ The shapes also need another event listener for click event. When the shapes are clicked, their opacity attributes are changed and
+they are given different colors of strokes for emphasis.</p>
+<p>One thing I do not like this visualization is that when there are too many circles, the graph looks messy because all of the circles
+are overlapping with each other, which makes them really hard to choose, even though they are transparent. </p>
+  </body>
+</html>
